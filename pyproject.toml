@@ -1,0 +1,33 @@
+[project]
+name = "sentiment-loop"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "accelerate>=1.12.0",
+    "datasets>=4.0.0",
+    "graphviz>=0.21",
+    "ipykernel>=7.1.0",
+    "jupyter>=1.1.1",
+    "label-studio>=1.21.0",
+    "numpy",
+    "openai",
+    "pandas",
+    "protobuf>=6.33.2",
+    "python-dotenv>=1.2.1",
+    "scikit-learn",
+    "sentencepiece>=0.2.1",
+    "streamlit>=1.52.1",
+    "torch>=2.9.1",
+    "torchvision>=0.24.1",
+    "transformers",
+]
+
+[dependency-groups]
+dev = []
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
