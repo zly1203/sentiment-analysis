@@ -10,6 +10,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app.py config.py ./
+COPY .streamlit/ .streamlit/
 COPY 06_models/ ./06_models/
 
 # HuggingFace Spaces requires port 7860
